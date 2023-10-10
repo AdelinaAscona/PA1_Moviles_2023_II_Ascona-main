@@ -11,11 +11,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Menu.unity
-    guid: 960ecf9d4b55c404496e537e0c463926
+    guid: 8e0e6b5e58f66804faff1ea8e5e780fd
   - enabled: 1
     path: Assets/Scenes/PuntajeMax.unity
-    guid: cafea7afb726aa642a2b510243e5870e
+    guid: cced1d26d33cac648b3d05b508fe66b6
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 20077be159ec85d4cad67526aafd3cc6, type: 2}
