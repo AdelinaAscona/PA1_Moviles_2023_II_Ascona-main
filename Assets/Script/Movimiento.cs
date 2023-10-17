@@ -69,7 +69,9 @@ public class Movimiento : MonoBehaviour
         // Verifica si la vida del jugador llega a 0 y cambia de escena.
         if (playerHealth.currentHealth <= 0)
         {
+            ActivateObjectsInPuntajeMaxScene();
             ChangeSceneAndResetHealth();
+
         }
     }
 
@@ -89,9 +91,23 @@ public class Movimiento : MonoBehaviour
     private void ChangeSceneAndResetHealth()
     {
         // Cambia a la escena deseada (reemplaza "NombreDeTuEscena" por el nombre correcto de tu escena).
-        SceneManager.LoadScene("PuntajeMax");
+        //SceneManager.LoadScene("PuntajeMax");
 
         // Restablece la vida del jugador a 3.
         playerHealth.currentHealth = 3;
+    }
+
+    private void ActivateObjectsInPuntajeMaxScene()
+    {
+        // Encuentra todos los objetos desactivados en la escena "PuntajeMax" y actívalos.
+        Scene puntajeMaxScene = SceneManager.GetSceneByName("PuntajeMax");
+        if (puntajeMaxScene.IsValid())
+        {
+            GameObject[] objectsInScene = puntajeMaxScene.GetRootGameObjects();
+            foreach (GameObject obj in objectsInScene)
+            {
+                obj.SetActive(true);
+            }
+        }
     }
 }
