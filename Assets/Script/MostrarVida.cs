@@ -3,8 +3,8 @@ using TMPro;
 
 public class MostrarVida : MonoBehaviour
 {
-    public PlayerHealth playerHealth; // Arrastra el ScriptableObject de la vida del jugador aquí desde el Inspector.
-    public TMP_Text textoVida; // Arrastra el objeto de TextMeshPro aquí desde el Inspector.
+    public PlayerHealth playerHealth; 
+    public TMP_Text textoVida; 
 
     private void Update()
     {
